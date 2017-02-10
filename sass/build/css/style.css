@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic-ext");
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', arial;
+  font-weight: 200; }
+
+html h1 {
+  font-size: 400%; }
+
+html h2 {
+  font-size: 250%; }
+
+html h3 {
+  font-size: 220%; }
+
+html h4 {
+  font-size: 180%; }
+
+html h5 {
+  font-size: 140%; }

@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!--
+-подключение шрифтов
+-базовое форматирование
+-базовые заливки и фоны
+-меню переключения
+-svg
+-текст
+-тестирование
+-постобработка, анимация
+-добавление форм
+-тестирование
+
+-->
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/jquery.fullpage.css" />
+	<link rel="stylesheet" href="sass/build/css/jquery.fullpage.css" />
+	<link rel="stylesheet" href="sass/build/css/style.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script>
@@ -32,7 +46,13 @@
 	</ul>
 <div id="fullpage">
 	<div class="section" id="section1">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quia libero unde sapiente consectetur aspernatur tenetur aliquid quis magni consequatur, quisquam! Necessitatibus et porro velit, non earum atque deserunt harum.  </p>
+		<p>
+			<h1>Пример h1</h1>
+			<h2>Пример h2</h2>
+			<h3>Пример h3</h3>
+			<h4>Пример h4</h4>
+			<h5>Пример h5</h5>
+		</p>
 	</div>
 	<div class="section" id="section2">
 		<p>Explicabo nemo quae animi natus cum porro in sequi perspiciatis vel veritatis. Quaerat laborum repudiandae, ratione ipsa similique. Nihil obcaecati, consequuntur incidunt qui assumenda laudantium eius aut. Suscipit, tempore corporis.</p>

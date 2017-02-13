@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
 <!--
-+подключение шрифтов
-+базовое форматирование
-+базовые заливки и фоны
--меню переключения
--svg
--текст
--тестирование
--постобработка, анимация
--добавление форм
--тестирование
++++подключение шрифтов
++++базовое форматирование
++++базовые заливки и фоны
++++меню переключения
+___svg
+___текст
+___тестирование
+___постобработка, анимация
+___добавление форм
+___тестирование
 
 -->
 	<meta charset="UTF-8">
@@ -39,14 +39,21 @@
 	})
 	</script>
 <body>
-	<ul class="menu">
-		<li data-menuanchor="fistPage"><a href="#fistPage">fistSlaider</a></li>
-		<li data-menuanchor="secondPage"><a href="#secondPage">secondSlider</a></li>
-		<li data-menuanchor="3rdPage"><a href="#3rdPage">3rd Slider</a></li>
-		<li data-menuanchor="4thPage"><a href="#4thPage">4th Slider</a></li>
-		<li data-menuanchor="5thPage"><a href="#5thPage">5th Slider</a></li>
-		<li data-menuanchor="6thPage"><a href="#6thPage">6th Slider</a></li>
-	</ul>
+	<nav id="wrapMenu">
+	    <ul class="menu" id="leftMenu">
+		    <!--<li data-menuanchor="fistPage"><a href="#fistPage">fistSlaider</a></li>
+		    <li data-menuanchor="secondPage"><a href="#secondPage">secondSlider</a></li>
+		    <li data-menuanchor="3rdPage"><a href="#3rdPage">3rd Slider</a></li>
+		    <li data-menuanchor="4thPage"><a href="#4thPage">4th Slider</a></li>-->
+			<li data-menuanchor="5thPage"><a href="#5thPage">Тарифы</a></li>
+		    <li data-menuanchor="6thPage"><a href="#6thPage">Услуги</a></li>	
+		    <li class="respondents"><a href="http">Вход для респондентов</a></li>
+		</ul>
+		<ul class="menu" id="rightMenu">
+			<li class="login"><a href="http">Войти</a></li>
+			<li class="registration"><a href="http">Регистрация</a></li>
+		</ul>
+	</nav>
 <div id="fullpage">
 	<div class="section" id="section1">
 		<p>

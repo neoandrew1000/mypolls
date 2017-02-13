@@ -11,19 +11,20 @@ ol {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', arial;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #525252; }
 
-html h1 {
+h1 {
   font-size: 400%; }
 
-html h2 {
+h2 {
   font-size: 250%; }
 
-html h3 {
+h3 {
   font-size: 220%; }
 
-html h4 {
+h4 {
   font-size: 180%; }
 
-html h5 {
+h5 {
   font-size: 140%; }

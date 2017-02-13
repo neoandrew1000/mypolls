@@ -1,6 +1,37 @@
 // style.sass
 @import global.sass
 
+a
+	text-decoration: none;
+	color: $d-d-gray
+
+#wrapMenu
+	width: 100%
+	display: -webkit-flex; /* Safari */
+	display: flex; /*отображает контейнер как блочный элемент*/	
+	justify-content: space-between
+	background-color: white
+	position: fixed
+	z-index: 70	
+
+
+.menu
+	display: -webkit-flex; /* Safari */
+	display: flex; /*отображает контейнер как блочный элемент*/
+	list-style: none;
+	li
+		padding: 25px
+
+#leftMenu
+	margin-left: 5%
+#rightMenu
+	margin-right: 5%
+	.registration
+		border: solid 1px $d-d-gray
+		padding: 4px 9px 5px 9px
+		margin: 21px 16px 20px 16px
+
+
 #fullpage
 	#section1
 
@@ -8,5 +39,10 @@
 		background-image: url(../../../img/bg2.jpg)
 		background-size: cover
 	#section3
+
+
+
+
+
 
 

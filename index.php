@@ -6,7 +6,8 @@
 +++базовое форматирование
 +++базовые заливки и фоны
 +++меню переключения
-___svg
++++svg
+___img
 ___текст
 ___тестирование
 ___постобработка, анимация
@@ -23,6 +24,7 @@ ___тестирование
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script>
 	
 </head>
+	<!-- скрипт работы fullfage.js -->
 	<script>
 	jQuery(document).ready(function($) {
 		$("#fullpage").fullpage({
@@ -39,7 +41,9 @@ ___тестирование
 	})
 	</script>
 <body>
+	<!-- flexbox объединяющий обе менюхи -->
 	<nav id="wrapMenu">
+		<!-- левое меню -->
 	    <ul class="menu" id="leftMenu">
 		    <!--<li data-menuanchor="fistPage"><a href="#fistPage">fistSlaider</a></li>
 		    <li data-menuanchor="secondPage"><a href="#secondPage">secondSlider</a></li>
@@ -49,12 +53,15 @@ ___тестирование
 		    <li data-menuanchor="6thPage"><a href="#6thPage">Услуги</a></li>	
 		    <li class="respondents"><a href="http">Вход для респондентов</a></li>
 		</ul>
+		<!-- правое меню -->
 		<ul class="menu" id="rightMenu">
 			<li class="login"><a href="http">Войти</a></li>
 			<li class="registration"><a href="http">Регистрация</a></li>
 		</ul>
 	</nav>
+<!-- нужный див для работы бибилиоткеи fullpage.js -->
 <div id="fullpage">
+	 <!-- первая главная страничка -->
 	<div class="section" id="section1">
 		<p>
 			<h1>Пример h1</h1>
@@ -62,20 +69,29 @@ ___тестирование
 			<h3>Пример h3</h3>
 			<h4>Пример h4</h4>
 			<h5>Пример h5</h5>
+			<img src="svg/logo.svg" width="400" alt="">
 		</p>
 	</div>
+	<!-- вторая страничка "с нами нет ничего сложного" -->
 	<div class="section" id="section2">
+		<img src="svg/icon1.svg" width="150" alt="">
+		<img src="svg/icon2.svg" width="150" alt="">
+		<img src="svg/icon3.svg" width="170" alt="">
 		<p>Explicabo nemo quae animi natus cum porro in sequi perspiciatis vel veritatis. Quaerat laborum repudiandae, ratione ipsa similique. Nihil obcaecati, consequuntur incidunt qui assumenda laudantium eius aut. Suscipit, tempore corporis.</p>
 	</div>
+	<!-- третья страничка "быстрое получение результата" -->
 	<div class="section" id="section3">
 		<p>Quisquam ex possimus, quia tenetur. Rerum facere nesciunt esse officia sit minima quidem laboriosam nobis, fugit laudantium. Molestias placeat facere, laudantium quidem voluptatibus voluptatum nobis libero commodi, iure tempora ducimus.</p>
 	</div>
+	<!-- четвертая страничка "консультации" -->
 	<div class="section" id="section4">
 		<p>Explicabo nemo quae animi natus cum porro in sequi perspiciatis vel veritatis. Quaerat laborum repudiandae, ratione ipsa similique. Nihil obcaecati, consequuntur incidunt qui assumenda laudantium eius aut. Suscipit, tempore corporis.</p>
 	</div>
+	<!-- пятая страничка "отзывы" -->
 	<div class="section" id="section5">
 		<p>Quisquam ex possimus, quia tenetur. Rerum facere nesciunt esse officia sit minima quidem laboriosam nobis, fugit laudantium. Molestias placeat facere, laudantium quidem voluptatibus voluptatum nobis libero commodi, iure tempora ducimus.</p>
 	</div>	
+	<!-- шестая страничка "футер" -->
 	<div class="section" id="section6">
 		<p>Quisquam ex possimus, quia tenetur. Rerum facere nesciunt esse officia sit minima quidem laboriosam nobis, fugit laudantium. Molestias placeat facere, laudantium quidem voluptatibus voluptatum nobis libero commodi, iure tempora ducimus.</p>
 	</div>		

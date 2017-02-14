@@ -7,8 +7,10 @@
 +++базовые заливки и фоны
 +++меню переключения
 +++svg
-___img
++++img
 ___текст
+___верстка
+___bg svg
 ___тестирование
 ___постобработка, анимация
 ___добавление форм
@@ -81,10 +83,14 @@ ___тестирование
 	</div>
 	<!-- третья страничка "быстрое получение результата" -->
 	<div class="section" id="section3">
+	<img src="img/sl3img1.jpg" width="600" alt="">
 		<p>Quisquam ex possimus, quia tenetur. Rerum facere nesciunt esse officia sit minima quidem laboriosam nobis, fugit laudantium. Molestias placeat facere, laudantium quidem voluptatibus voluptatum nobis libero commodi, iure tempora ducimus.</p>
 	</div>
 	<!-- четвертая страничка "консультации" -->
 	<div class="section" id="section4">
+	<img src="img/sl4img1.jpg" width="600" alt="">
+	<img src="img/icon4.png" width="100" alt="">
+	<img src="img/icon5.png" width="100" alt="">
 		<p>Explicabo nemo quae animi natus cum porro in sequi perspiciatis vel veritatis. Quaerat laborum repudiandae, ratione ipsa similique. Nihil obcaecati, consequuntur incidunt qui assumenda laudantium eius aut. Suscipit, tempore corporis.</p>
 	</div>
 	<!-- пятая страничка "отзывы" -->

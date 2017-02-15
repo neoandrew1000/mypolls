@@ -101,8 +101,26 @@ ___тестирование
 	</div>
 	<!-- третья страничка "быстрое получение результата" -->
 	<div class="section" id="section3">
-	<img src="img/sl3img1.jpg" width="600" alt="">
-		<p>Quisquam ex possimus, quia tenetur. Rerum facere nesciunt esse officia sit minima quidem laboriosam nobis, fugit laudantium. Molestias placeat facere, laudantium quidem voluptatibus voluptatum nobis libero commodi, iure tempora ducimus.</p>
+		<ul>
+			<li><img src="img/sl3img1.jpg" width="600" alt=""></li>
+			<li>
+				<ul>
+					<li>
+						<h5>Быстрое получение результата</h5>
+					</li>
+					<li>
+						<h5>Серверы находятся на территории<br>Российской Федерации</h5>
+					</li>
+					<li>
+						<h5>Наши анкеты и сервис доступны на<br>всех современных устройствах</h5>
+					</li>
+					<li>
+						<h5>На возникшие вопросы поможет<br>ответить личный менеджер</h5>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		
 	</div>
 	<!-- четвертая страничка "консультации" -->
 	<div class="section" id="section4">

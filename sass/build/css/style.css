@@ -28,7 +28,7 @@ h4 {
   font-size: 180%; }
 
 h5 {
-  font-size: 160%; }
+  font-size: 140%; }
 
 a {
   text-decoration: none;
@@ -112,15 +112,8 @@ a {
         color: white;
         font-weight: 300;
         margin-bottom: 20px; }
-      #fullpage #section2 ul li ul {
-        list-style: none;
-        display: -webkit-flex;
-        /* Safari */
-        display: flex;
-        /*отображает контейнер как блочный элемент*/
-        flex-direction: column; }
-        #fullpage #section2 ul li ul li {
-          text-align: center; }
+      #fullpage #section2 ul li ul li {
+        text-align: center; }
     #fullpage #section2 ul li:nth-child(2) {
       width: 84%;
       display: -webkit-flex;
@@ -128,3 +121,21 @@ a {
       display: flex;
       /*отображает контейнер как блочный элемент*/
       justify-content: space-around; }
+
+#fullpage #section3 ul {
+  list-style: none;
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  /*отображает контейнер как блочный элемент*/
+  justify-content: space-around;
+  align-items: center; }
+  #fullpage #section3 ul li {
+    margin: 25px 0; }
+    #fullpage #section3 ul li ul {
+      display: -webkit-flex;
+      /* Safari */
+      display: flex;
+      /*отображает контейнер как блочный элемент*/
+      flex-direction: column;
+      align-items: baseline; }

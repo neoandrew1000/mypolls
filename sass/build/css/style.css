@@ -16,10 +16,10 @@ ol {
   color: #525252; }
 
 h1 {
-  font-size: 400%; }
+  font-size: 350%; }
 
 h2 {
-  font-size: 250%; }
+  font-size: 300%; }
 
 h3 {
   font-size: 220%; }
@@ -28,7 +28,7 @@ h4 {
   font-size: 180%; }
 
 h5 {
-  font-size: 140%; }
+  font-size: 160%; }
 
 a {
   text-decoration: none;
@@ -64,6 +64,67 @@ a {
     padding: 4px 9px 5px 9px;
     margin: 21px 16px 20px 16px; }
 
+#fullpage #section1 ul {
+  list-style: none;
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  /*отображает контейнер как блочный элемент*/
+  flex-direction: column; }
+  #fullpage #section1 ul li {
+    margin: auto; }
+    #fullpage #section1 ul li div {
+      margin: 50px;
+      width: 200px;
+      height: 200px;
+      background-image: url(../../../svg/logo.svg); }
+  #fullpage #section1 ul li:nth-child(-n+3) h1 {
+    font-weight: 100; }
+  #fullpage #section1 ul li:nth-child(1) h1 {
+    color: #191919; }
+  #fullpage #section1 ul li:nth-child(2) {
+    margin-top: -14px; }
+  #fullpage #section1 ul li:nth-child(3) {
+    margin-top: -14px; }
+  #fullpage #section1 ul li:nth-child(5) h5 {
+    border: solid 1px #191919;
+    margin-top: 10px;
+    padding: 5px 15px 6px 15px; }
+
 #fullpage #section2 {
   background-image: url(../../../img/bg2.jpg);
   background-size: cover; }
+  #fullpage #section2 ul {
+    list-style: none;
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    /*отображает контейнер как блочный элемент*/
+    flex-direction: column; }
+    #fullpage #section2 ul li {
+      margin: auto;
+      color: white; }
+      #fullpage #section2 ul li h2 {
+        color: white;
+        font-weight: 400;
+        margin-bottom: 50px; }
+      #fullpage #section2 ul li h4 {
+        color: white;
+        font-weight: 300;
+        margin-bottom: 20px; }
+      #fullpage #section2 ul li ul {
+        list-style: none;
+        display: -webkit-flex;
+        /* Safari */
+        display: flex;
+        /*отображает контейнер как блочный элемент*/
+        flex-direction: column; }
+        #fullpage #section2 ul li ul li {
+          text-align: center; }
+    #fullpage #section2 ul li:nth-child(2) {
+      width: 84%;
+      display: -webkit-flex;
+      /* Safari */
+      display: flex;
+      /*отображает контейнер как блочный элемент*/
+      justify-content: space-around; }

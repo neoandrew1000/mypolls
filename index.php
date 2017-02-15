@@ -8,8 +8,8 @@
 +++меню переключения
 +++svg
 +++img
-___текст
-___верстка
++__текст
++__верстка
 ___bg svg
 ___тестирование
 ___постобработка, анимация
@@ -62,24 +62,42 @@ ___тестирование
 		</ul>
 	</nav>
 <!-- нужный див для работы бибилиоткеи fullpage.js -->
+<div class="pageWrap">
 <div id="fullpage">
 	 <!-- первая главная страничка -->
 	<div class="section" id="section1">
-		<p>
-			<h1>Пример h1</h1>
-			<h2>Пример h2</h2>
-			<h3>Пример h3</h3>
-			<h4>Пример h4</h4>
-			<h5>Пример h5</h5>
-			<img src="svg/logo.svg" width="400" alt="">
-		</p>
+		<ul>
+			<li><h1>MyPolls.ru</h1></li>
+			<li><h1>Создание опросов</h1></li>
+			<li><h1>Просто и удобно</h1></li>
+			<li><div></div></li>
+			<li><a href="modal"><h5>НАЧНИТЕ ПРЯМО СЕЙЧАС</h5></a></li>
+		</ul>
 	</div>
 	<!-- вторая страничка "с нами нет ничего сложного" -->
 	<div class="section" id="section2">
-		<img src="svg/icon1.svg" width="150" alt="">
-		<img src="svg/icon2.svg" width="150" alt="">
-		<img src="svg/icon3.svg" width="170" alt="">
-		<p>Explicabo nemo quae animi natus cum porro in sequi perspiciatis vel veritatis. Quaerat laborum repudiandae, ratione ipsa similique. Nihil obcaecati, consequuntur incidunt qui assumenda laudantium eius aut. Suscipit, tempore corporis.</p>
+		<ul>
+			<li><h2>С нами нет ничего сложного:</h2></li>
+			<li>
+				<ul>
+					<li><h4>Вы создаете<br>опрос</h4></li>
+					<li><img src="svg/icon1.svg" width="150" alt=""></li>
+					<li><p>Удобная панель для<br>конструирования<br>опросов</p></li>
+				</ul>
+				<ul>
+					<li><h4>Собираете<br>ответы</h4></li>
+					<li><img src="svg/icon2.svg" width="150" alt=""></li>
+					<li><p>Большое количество<br>активных<br>респондентов</p></li>
+				</ul>
+				<ul>
+					<li><h4>Получаете<br>результат</h4></li>
+					<li><img src="svg/icon3.svg" width="170" alt=""></li>
+					<li><p>Результат в нужном<br>вам формате,<br>графики и диаграммы</p></li>
+				</ul>
+			</li>		
+			
+		</ul>
+		
 	</div>
 	<!-- третья страничка "быстрое получение результата" -->
 	<div class="section" id="section3">
@@ -101,6 +119,7 @@ ___тестирование
 	<div class="section" id="section6">
 		<p>Quisquam ex possimus, quia tenetur. Rerum facere nesciunt esse officia sit minima quidem laboriosam nobis, fugit laudantium. Molestias placeat facere, laudantium quidem voluptatibus voluptatum nobis libero commodi, iure tempora ducimus.</p>
 	</div>		
+</div>
 </div>
 	
 </body>

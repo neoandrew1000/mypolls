@@ -30,14 +30,76 @@ a
 		border: solid 1px $d-d-gray
 		padding: 4px 9px 5px 9px
 		margin: 21px 16px 20px 16px
+.pageWrap
+	//margin-top: 55px
 
-
-#fullpage
+#fullpage		
 	#section1
+		ul
+			list-style: none;
+			display: -webkit-flex; /* Safari */
+			display: flex; /*отображает контейнер как блочный элемент*/
+			flex-direction: column	
+			li
+				margin: auto
+				div // логотип
+					margin: 50px
+					width: 200px
+					height: 200px
+					background-image: url(../../../svg/logo.svg)
+			li:nth-child(-n+3) //первые 3 элемента списка
+				h1
+					font-weight: 100 				
+			li:nth-child(1)
+				h1
+					color: $d-d-gray
+			li:nth-child(2)
+				margin-top: -14px
+			li:nth-child(3)
+				margin-top: -14px
+			li:nth-child(5)
+				h5
+					border: solid 1px $d-d-gray
+					margin-top: 10px
+					padding: 5px 15px 6px 15px						
+			
+
+
+
 
 	#section2
 		background-image: url(../../../img/bg2.jpg)
 		background-size: cover
+		ul
+			list-style: none;
+			display: -webkit-flex; /* Safari */
+			display: flex; /*отображает контейнер как блочный элемент*/
+			flex-direction: column	
+			li
+				margin: auto
+				color: white
+				h2
+					color: white
+					font-weight: 400
+					margin-bottom: 50px 					
+				h4
+					color: white
+					font-weight: 300
+					margin-bottom: 20px 
+				ul
+					list-style: none;
+					display: -webkit-flex; /* Safari */
+					display: flex; /*отображает контейнер как блочный элемент*/
+					flex-direction: column		
+					li
+						text-align: center		
+	
+			li:nth-child(2)
+				width: 84%	
+				display: -webkit-flex; /* Safari */
+				display: flex; /*отображает контейнер как блочный элемент*/
+				justify-content: space-around					
+
 	#section3
 
 

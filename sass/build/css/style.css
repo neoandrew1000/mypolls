@@ -76,10 +76,11 @@ a {
   #fullpage #section1 ul li {
     margin: auto; }
     #fullpage #section1 ul li div {
-      margin: 50px;
-      width: 200px;
-      height: 200px;
-      background-image: url(../../../svg/logo.svg); }
+      width: 100vw;
+      height: 295px;
+      background-image: url(../../../svg/logo.svg);
+      background-size: cover;
+      background-position: 50% 50%; }
   #fullpage #section1 ul li:nth-child(-n+3) h1 {
     font-weight: 100; }
   #fullpage #section1 ul li:nth-child(1) h1 {

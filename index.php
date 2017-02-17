@@ -49,10 +49,10 @@ ___тестирование
 	    <ul class="menu" id="leftMenu">
 		    <!--<li data-menuanchor="fistPage"><a href="#fistPage">fistSlaider</a></li>
 		    <li data-menuanchor="secondPage"><a href="#secondPage">secondSlider</a></li>
-		    <li data-menuanchor="3rdPage"><a href="#3rdPage">3rd Slider</a></li>
-		    <li data-menuanchor="4thPage"><a href="#4thPage">4th Slider</a></li>-->
-			<li data-menuanchor="5thPage"><a href="#5thPage">Тарифы</a></li>
-		    <li data-menuanchor="6thPage"><a href="#6thPage">Услуги</a></li>	
+		    <li data-menuanchor="3rdPage"><a href="#3rdPage">3rd Slider</a></li>-->
+		    <li data-menuanchor="5thPage"><a href="#5thPage">Тарифы</a></li>
+		    <li data-menuanchor="4thPage"><a href="#4thPage">Услуги</a></li>
+		    <!--<li data-menuanchor="6thPage"><a href="#6thPage">6 thPage</a></li>-->
 		    <li class="respondents"><a href="http">Вход для респондентов</a></li>
 		</ul>
 		<!-- правое меню -->

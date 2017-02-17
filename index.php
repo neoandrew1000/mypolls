@@ -10,9 +10,9 @@
 +++img
 +++текст
 +++верстка
-___bg svg
-___тестирование
-___постобработка, анимация
++++bg svg
++++тестирование
++++постобработка, анимация
 ___добавление форм
 ___тестирование
 
@@ -36,6 +36,29 @@ ___тестирование
 			scrollBar:false,
 			//scrollOverflow:true,
 			loopBottom:true,
+			afterLoad:function(link,index) {
+				if(index == 1) {
+					$("#section1").animate({'opacity':'1'},700);
+				}				
+				if(index == 2) {
+					$("#section2 h2").animate({'opacity':'1'},50);
+					$("#section2 h4").animate({'opacity':'1'},200);
+					$("#section2 img").animate({'opacity':'1'},300);
+					$("#section2 .firstP").animate({'opacity':'1'},400);
+					$("#section2 .secondP").animate({'opacity':'1'},500);
+					$("#section2 .thirdP").animate({'opacity':'1'},600);
+				}
+				if(index == 3) {
+					$("#section3 .wr").animate({'width':'100%'},500);
+				}		
+				if(index == 4) {
+					$("#section4 .firstManager").animate({'opacity':'1'},200);
+					$("#section4 h3").animate({'opacity':'1'},200);
+					$("#section4 .secondManager").animate({'opacity':'1'},500);
+					$("#section4 .rightSectionP").animate({'opacity':'1'},500);
+				}							
+
+			}
 
 		});
 
@@ -71,7 +94,7 @@ ___тестирование
 			<li><h1>Создание опросов</h1></li>
 			<li><h1>Просто и удобно</h1></li>
 			<li><div></div></li>
-			<li><a href="modal"><h5>НАЧНИТЕ ПРЯМО СЕЙЧАС</h5></a></li>
+			<li class="begin"><a href="modal"><h5>НАЧНИТЕ ПРЯМО СЕЙЧАС</h5></a></li>
 		</ul>
 	</div>
 	<!-- вторая страничка "с нами нет ничего сложного" -->
@@ -82,25 +105,24 @@ ___тестирование
 				<ul>
 					<li><h4>Вы создаете<br>опрос</h4></li>
 					<li><img src="svg/icon1.svg" width="150" alt=""></li>
-					<li><p>Удобная панель для<br>конструирования<br>опросов</p></li>
+					<li><p class="firstP">Удобная панель для<br>конструирования<br>опросов</p></li>
 				</ul>
 				<ul>
 					<li><h4>Собираете<br>ответы</h4></li>
 					<li><img src="svg/icon2.svg" width="150" alt=""></li>
-					<li><p>Большое количество<br>активных<br>респондентов</p></li>
+					<li><p class="secondP">Большое количество<br>активных<br>респондентов</p></li>
 				</ul>
 				<ul>
 					<li><h4>Получаете<br>результат</h4></li>
 					<li><img src="svg/icon3.svg" width="170" alt=""></li>
-					<li><p>Результат в нужном<br>вам формате,<br>графики и диаграммы</p></li>
+					<li><p class="thirdP">Результат в нужном<br>вам формате,<br>графики и диаграммы</p></li>
 				</ul>
 			</li>		
-			
-		</ul>
-		
+		</ul>	
 	</div>
 	<!-- третья страничка "быстрое получение результата" -->
 	<div class="section" id="section3">
+	<div class="wr">
 		<ul>
 			<li><img src="img/sl3img1.jpg" width="600" alt=""></li>
 			<li>
@@ -120,7 +142,7 @@ ___тестирование
 				</ul>
 			</li>
 		</ul>
-		
+	</div>	
 	</div>
 	<!-- четвертая страничка "консультации" -->
 	<div class="section" id="section4">
@@ -159,7 +181,7 @@ ___тестирование
 				<div class="rightSection">
 					<ul>
 						<li><h3>Комплексные профессиональные услуги</h3></li>
-						<li><p>Наши специалисты качественно<br>и быстро подготовят и проведут<br> исследования, 		осуществят<br>расчет индексов, составят<br>статестический и аналитический<br>отчеты</p></li>
+						<li><p class="rightSectionP">Наши специалисты качественно<br>и быстро подготовят и проведут<br> исследования, 		осуществят<br>расчет индексов, составят<br>статестический и аналитический<br>отчеты</p></li>
 						<li></li>
 					</ul>
 				</div>

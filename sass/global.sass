@@ -29,17 +29,37 @@ ol
 
 
 h1
-	font-size: 350%;
+	font-size: 350%
 h2
-	font-size: 300%;
+	font-size: 300%
 h3
-	font-size: 220%;
+	font-size: 220%
 h4
-	font-size: 180%;
+	font-size: 180%
 h5
-	font-size: 140%;
+	font-size: 140%
 ul
-	list-style: none;
+	list-style: none
+
+a
+	text-decoration: none
+	color: $d-d-gray
+	line-height: 1
+    display: inline-block
+    cursor: pointer
+
+a:after
+    display: block;
+    content: ""
+    height: 1px
+    width: 0%
+    background-color: $d-d-gray
+    transition: width .3s ease-in-out
+
+a:hover:after,
+a:focus:after
+    width: 100%
+
 
 
 

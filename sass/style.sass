@@ -1,9 +1,6 @@
 // style.sass
 @import global.sass
 
-a
-	text-decoration: none;
-	color: $d-d-gray
 
 #wrapMenu
 	width: 100%
@@ -39,6 +36,10 @@ a
 #fullpage	
 
 	#section1
+		opacity: 0
+		.begin
+			a:after
+				height: 0px
 
 		ul
 			display: -webkit-flex; /* Safari */
@@ -83,6 +84,10 @@ a
 	#section2
 		background-image: url(../../../img/bg2.jpg)
 		background-size: cover
+		img
+			opacity: 0
+		p
+			opacity: 0
 
 		ul
 			display: -webkit-flex; /* Safari */
@@ -96,11 +101,13 @@ a
 				h2
 					color: white
 					font-weight: 400
-					margin-bottom: 50px 					
+					margin-bottom: 50px
+					opacity: 0					
 				h4
 					color: white
 					font-weight: 300
 					margin-bottom: 20px 
+					opacity: 0	
 				
 				li
 					text-align: center		
@@ -112,6 +119,11 @@ a
 				justify-content: space-around					
 
 	#section3
+		.wr
+			width: 200%
+			overflow: hidden
+
+
 
 		ul
 			display: -webkit-flex; /* Safari */
@@ -163,11 +175,13 @@ a
 			ul.firstManager
 				margin-right: 10px
 				margin-bottom: 155px
+				opacity: 0
 
 				p
 					margin-right: 228px	
 
 			ul.secondManager
+				opacity: 0
 
 				p
 					margin-right: 96px				
@@ -202,11 +216,13 @@ a
 				h3
 					font-weight: 100
 					margin-top: 100px
+					opacity: 0
 				p
 					font-size: 150%
 					font-weight: 100
 					margin-top: -55px
 					padding: 25px  0 0 25px
+					opacity: 0
 
 				p:first-letter
 					font-weight: 300

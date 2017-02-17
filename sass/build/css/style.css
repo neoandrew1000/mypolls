@@ -35,7 +35,22 @@ ul {
 
 a {
   text-decoration: none;
-  color: #191919; }
+  color: #191919;
+  line-height: 1;
+    line-height-display: inline-block;
+    line-height-cursor: pointer; }
+
+a:after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0%;
+  background-color: #191919;
+  transition: width .3s ease-in-out; }
+
+a:hover:after,
+a:focus:after {
+  width: 100%; }
 
 #wrapMenu {
   width: 100%;
@@ -67,36 +82,44 @@ a {
     padding: 4px 9px 5px 9px;
     margin: 21px 16px 20px 16px; }
 
-#fullpage #section1 ul {
-  display: -webkit-flex;
-  /* Safari */
-  display: flex;
-  /*отображает контейнер как блочный элемент*/
-  flex-direction: column; }
-  #fullpage #section1 ul li {
-    margin: auto; }
-    #fullpage #section1 ul li div {
-      width: 100vw;
-      height: 295px;
-      background-image: url(../../../svg/logo.svg);
-      background-size: cover;
-      background-position: 50% 50%; }
-  #fullpage #section1 ul li:nth-child(-n+3) h1 {
-    font-weight: 100; }
-  #fullpage #section1 ul li:nth-child(1) h1 {
-    color: #191919; }
-  #fullpage #section1 ul li:nth-child(2) {
-    margin-top: -14px; }
-  #fullpage #section1 ul li:nth-child(3) {
-    margin-top: -14px; }
-  #fullpage #section1 ul li:nth-child(5) h5 {
-    border: solid 1px #191919;
-    margin-top: 10px;
-    padding: 5px 15px 6px 15px; }
+#fullpage #section1 {
+  opacity: 0; }
+  #fullpage #section1 .begin a:after {
+    height: 0px; }
+  #fullpage #section1 ul {
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    /*отображает контейнер как блочный элемент*/
+    flex-direction: column; }
+    #fullpage #section1 ul li {
+      margin: auto; }
+      #fullpage #section1 ul li div {
+        width: 100vw;
+        height: 295px;
+        background-image: url(../../../svg/logo.svg);
+        background-size: cover;
+        background-position: 50% 50%; }
+    #fullpage #section1 ul li:nth-child(-n+3) h1 {
+      font-weight: 100; }
+    #fullpage #section1 ul li:nth-child(1) h1 {
+      color: #191919; }
+    #fullpage #section1 ul li:nth-child(2) {
+      margin-top: -14px; }
+    #fullpage #section1 ul li:nth-child(3) {
+      margin-top: -14px; }
+    #fullpage #section1 ul li:nth-child(5) h5 {
+      border: solid 1px #191919;
+      margin-top: 10px;
+      padding: 5px 15px 6px 15px; }
 
 #fullpage #section2 {
   background-image: url(../../../img/bg2.jpg);
   background-size: cover; }
+  #fullpage #section2 img {
+    opacity: 0; }
+  #fullpage #section2 p {
+    opacity: 0; }
   #fullpage #section2 ul {
     display: -webkit-flex;
     /* Safari */
@@ -109,11 +132,13 @@ a {
       #fullpage #section2 ul li h2 {
         color: white;
         font-weight: 400;
-        margin-bottom: 50px; }
+        margin-bottom: 50px;
+        opacity: 0; }
       #fullpage #section2 ul li h4 {
         color: white;
         font-weight: 300;
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        opacity: 0; }
       #fullpage #section2 ul li li {
         text-align: center; }
     #fullpage #section2 ul li:nth-child(2) {
@@ -123,6 +148,10 @@ a {
       display: flex;
       /*отображает контейнер как блочный элемент*/
       justify-content: space-around; }
+
+#fullpage #section3 .wr {
+  width: 200%;
+  overflow: hidden; }
 
 #fullpage #section3 ul {
   display: -webkit-flex;
@@ -179,11 +208,14 @@ a {
       margin-top: -2px; }
     #fullpage #section4 .leftSection ul.firstManager {
       margin-right: 10px;
-      margin-bottom: 155px; }
+      margin-bottom: 155px;
+      opacity: 0; }
       #fullpage #section4 .leftSection ul.firstManager p {
         margin-right: 228px; }
-    #fullpage #section4 .leftSection ul.secondManager p {
-      margin-right: 96px; }
+    #fullpage #section4 .leftSection ul.secondManager {
+      opacity: 0; }
+      #fullpage #section4 .leftSection ul.secondManager p {
+        margin-right: 96px; }
     #fullpage #section4 .leftSection ul {
       display: -webkit-flex;
       /* Safari */
@@ -216,12 +248,14 @@ a {
       height: 100%; }
       #fullpage #section4 .rightSectionLi .rightSection h3 {
         font-weight: 100;
-        margin-top: 100px; }
+        margin-top: 100px;
+        opacity: 0; }
       #fullpage #section4 .rightSectionLi .rightSection p {
         font-size: 150%;
         font-weight: 100;
         margin-top: -55px;
-        padding: 25px  0 0 25px; }
+        padding: 25px  0 0 25px;
+        opacity: 0; }
       #fullpage #section4 .rightSectionLi .rightSection p:first-letter {
         font-weight: 300; }
       #fullpage #section4 .rightSectionLi .rightSection ul {

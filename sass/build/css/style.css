@@ -30,6 +30,9 @@ h4 {
 h5 {
   font-size: 140%; }
 
+ul {
+  list-style: none; }
+
 a {
   text-decoration: none;
   color: #191919; }
@@ -65,7 +68,6 @@ a {
     margin: 21px 16px 20px 16px; }
 
 #fullpage #section1 ul {
-  list-style: none;
   display: -webkit-flex;
   /* Safari */
   display: flex;
@@ -95,7 +97,6 @@ a {
   background-image: url(../../../img/bg2.jpg);
   background-size: cover; }
   #fullpage #section2 ul {
-    list-style: none;
     display: -webkit-flex;
     /* Safari */
     display: flex;
@@ -112,7 +113,7 @@ a {
         color: white;
         font-weight: 300;
         margin-bottom: 20px; }
-      #fullpage #section2 ul li ul li {
+      #fullpage #section2 ul li li {
         text-align: center; }
     #fullpage #section2 ul li:nth-child(2) {
       width: 84%;
@@ -123,7 +124,6 @@ a {
       justify-content: space-around; }
 
 #fullpage #section3 ul {
-  list-style: none;
   display: -webkit-flex;
   /* Safari */
   display: flex;
@@ -139,3 +139,107 @@ a {
       /*отображает контейнер как блочный элемент*/
       flex-direction: column;
       align-items: baseline; }
+
+#fullpage #section4 {
+  background: #ffde00;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #ffde00 73%, #ffdd00 73%, #fce835 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #ffde00 73%, #ffdd00 73%, #fce835 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #ffde00 73%, #ffdd00 73%, #fce835 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffde00', endColorstr='#fce835',GradientType=1 );
+  /* IE6-9 */ }
+  #fullpage #section4 .section4Ul {
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    /*отображает контейнер как блочный элемент*/
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%; }
+  #fullpage #section4 .leftSectionLi {
+    height: 100%;
+    width: 60%; }
+  #fullpage #section4 .leftSection {
+    height: 100%;
+    background-image: url(../../../img/sl4img1.jpg);
+    background-size: cover; }
+    #fullpage #section4 .leftSection h4 {
+      border-bottom: solid 1px white;
+      padding-left: 80px;
+      margin-left: 30px;
+      color: white;
+      font-weight: 100; }
+    #fullpage #section4 .leftSection p {
+      font-size: 75%;
+      margin-top: -2px; }
+    #fullpage #section4 .leftSection ul.firstManager {
+      margin-right: 10px;
+      margin-bottom: 155px; }
+      #fullpage #section4 .leftSection ul.firstManager p {
+        margin-right: 228px; }
+    #fullpage #section4 .leftSection ul.secondManager p {
+      margin-right: 96px; }
+    #fullpage #section4 .leftSection ul {
+      display: -webkit-flex;
+      /* Safari */
+      display: flex;
+      /*отображает контейнер как блочный элемент*/
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%; }
+      #fullpage #section4 .leftSection ul ul {
+        display: -webkit-flex;
+        /* Safari */
+        display: flex;
+        /*отображает контейнер как блочный элемент*/
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; }
+        #fullpage #section4 .leftSection ul ul ul {
+          color: white;
+            color-display: -webkit-flex;
+          color-/* Safari */
+          display: flex;
+          /*отображает контейнер как блочный элемент*/
+          flex-direction: column;
+          align-items: flex-end; }
+  #fullpage #section4 .rightSectionLi {
+    height: 100%;
+    width: 40%; }
+    #fullpage #section4 .rightSectionLi .rightSection {
+      height: 100%; }
+      #fullpage #section4 .rightSectionLi .rightSection h3 {
+        font-weight: 100;
+        margin-top: 100px; }
+      #fullpage #section4 .rightSectionLi .rightSection p {
+        font-size: 150%;
+        font-weight: 100;
+        margin-top: -55px;
+        padding: 25px  0 0 25px; }
+      #fullpage #section4 .rightSectionLi .rightSection p:first-letter {
+        font-weight: 300; }
+      #fullpage #section4 .rightSectionLi .rightSection ul {
+        display: -webkit-flex;
+        /* Safari */
+        display: flex;
+        /*отображает контейнер как блочный элемент*/
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        padding: 50px; }
+        #fullpage #section4 .rightSectionLi .rightSection ul li:nth-child(2) p {
+          border-top: solid 1px #bca71a; }
+
+#fullpage #section5 {
+  background-image: url(../../../img/demo.jpg);
+  background-size: cover; }
+
+#fullpage #section6 {
+  background-image: url(../../../img/demo2.jpg);
+  background-size: cover; }

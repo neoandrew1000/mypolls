@@ -8,8 +8,8 @@
 +++меню переключения
 +++svg
 +++img
-+__текст
-+__верстка
++++текст
++++верстка
 ___bg svg
 ___тестирование
 ___постобработка, анимация
@@ -124,14 +124,50 @@ ___тестирование
 	</div>
 	<!-- четвертая страничка "консультации" -->
 	<div class="section" id="section4">
-	<img src="img/sl4img1.jpg" width="600" alt="">
-	<img src="img/icon4.png" width="100" alt="">
-	<img src="img/icon5.png" width="100" alt="">
-		<p>Explicabo nemo quae animi natus cum porro in sequi perspiciatis vel veritatis. Quaerat laborum repudiandae, ratione ipsa similique. Nihil obcaecati, consequuntur incidunt qui assumenda laudantium eius aut. Suscipit, tempore corporis.</p>
+		<ul class="section4Ul">
+			<li class="leftSectionLi">		
+				<div class="leftSection"> <!-- левая секция -->
+					<ul> <!-- вертикальный flex-box левой секции -->
+						<li>
+							<ul class="firstManager"> <!-- горизонтальный flex-box 1-го менеджера -->
+								<li><img src="img/icon5.png" width="150" alt=""></li>
+								<li>
+									<ul> <!-- вертикальный flex-box имени/специальности 1-го менеджера -->
+										<li><h4>Александр Пушкин</h4></li>
+										<li><p>социолог-эксперт</p></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="secondManager"> <!-- горизонтальный flex-box 2-го менеджера -->
+								<li><img src="img/icon4.png" width="150" alt=""></li>
+								<li>
+									<ul> <!-- вертикальный flex-box имени/специальности 2-го менеджера -->
+										<li>
+											<h4>Федор Достоевский</h4>
+										</li>
+										<li><p>менеджер по работе с клиентами, социолог</p></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>			
+				</div>
+			</li>
+			<li class="rightSectionLi">
+				<div class="rightSection">
+					<ul>
+						<li><h3>Комплексные профессиональные услуги</h3></li>
+						<li><p>Наши специалисты качественно<br>и быстро подготовят и проведут<br> исследования, 		осуществят<br>расчет индексов, составят<br>статестический и аналитический<br>отчеты</p></li>
+						<li></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
 	</div>
 	<!-- пятая страничка "отзывы" -->
 	<div class="section" id="section5">
-		<p>Quisquam ex possimus, quia tenetur. Rerum facere nesciunt esse officia sit minima quidem laboriosam nobis, fugit laudantium. Molestias placeat facere, laudantium quidem voluptatibus voluptatum nobis libero commodi, iure tempora ducimus.</p>
 	</div>	
 	<!-- шестая страничка "футер" -->
 	<div class="section" id="section6">

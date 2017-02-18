@@ -13,7 +13,8 @@
 +++bg svg
 +++тестирование
 +++постобработка, анимация
-___добавление форм
++__добавление форм
+___стили форм
 ___тестирование
 
 -->
@@ -81,11 +82,26 @@ ___тестирование
 		<!-- правое меню -->
 		<ul class="menu" id="rightMenu">
 			<li class="login"><a href="http">Войти</a></li>
-			<li class="registration"><a href="http">Регистрация</a></li>
+			<li class="registration"><button onClick="getElementById('modalRegistration').removeAttribute('style');" type="button">Регистрация</button></li>
 		</ul>
 	</nav>
+
+
+<!-- модальное окно регистрации -->
+<div id="modalRegistration" style="display:none;">
+   	<div class="overlay">
+     	<div class="visible">
+     	<button type="button" onClick="getElementById('modalRegistration').style.display='none';">закрыть</button>
+       	<h2>Заголовок окна</h2>
+          	<div class="content">
+           	<p>Содержание</p>
+           		<p>Модальное окно фиксированной ширины</p>
+          	</div>
+        </div>
+    </div>
+</div>
+
 <!-- нужный див для работы бибилиоткеи fullpage.js -->
-<div class="pageWrap">
 <div id="fullpage">
 	 <!-- первая главная страничка -->
 	<div class="section" id="section1">
@@ -193,10 +209,13 @@ ___тестирование
 	</div>	
 	<!-- шестая страничка "футер" -->
 	<div class="section" id="section6">
-		<p>Quisquam ex possimus, quia tenetur. Rerum facere nesciunt esse officia sit minima quidem laboriosam nobis, fugit laudantium. Molestias placeat facere, laudantium quidem voluptatibus voluptatum nobis libero commodi, iure tempora ducimus.</p>
+		
 	</div>		
 </div>
-</div>
+
+
+
+
 	
 </body>
 </html>

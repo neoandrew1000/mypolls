@@ -1,3 +1,7 @@
+<?php 
+	require_once ('core/init.php');
+?>
+	
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,8 +67,34 @@ ___тестирование
 
 		});
 
+		// скрипт отправки формы без ребута страницы
+		$('#register-form').on('submit', function(e) {
+        	e.preventDefault();
+        	$.ajax({
+            	url : 'register.php',
+           		type: "POST",
+           		dataType:'json',
+            	data: $(this).serialize(),
+            	success: function (data) {
 
-	});
+            		if (data === "true"){
+
+
+            			$("#response").html("Вы зарегестрированы и теперь можете войти!");
+            			$("#register-form").remove();
+
+            		}else{
+            			
+                		$("#response").html(data);
+                	}
+            	},
+            	error: function (jXHR, textStatus, errorThrown) {
+                	alert(errorThrown);
+            	}
+        	});
+    	});
+	})
+
 	</script>
 <body>
 	<!-- flexbox объединяющий обе менюхи -->
@@ -86,19 +116,94 @@ ___тестирование
 		</ul>
 	</nav>
 
+<!-- модальное окно регистрации -->
+<div id="modalRegistration" style="display:none;">
+   	<div class="overlay">
+     	<div class="visible">
+     	<button type="button" onClick="getElementById('modalRegistration').style.display='none';">закрыть</button>
+       	<h2>Заголовок окна</h2>
+          	<div class="content">
+          		<!-- поле для ответа от сервера -->
+          	   <div id = "response">
+          	   </div>
+           		<form id= "register-form">
+					<div class="field">
+						<label for = "usrnam">Username</label>
+						<input type="text" name="usrnam" id="usrnam" value="<?php echo escape(Input::get("usrnam"))?>" autocomplete="off" >
+					</div>
 
-	<!-- модальное окно регистрации -->
-	<div id="modalRegistration" style="display:none;">
-	   	<div class="overlay">
-	     	<div class="visible">
-	     	<button type="button" onClick="getElementById('modalRegistration').style.display='none';">закрыть</button>
-	       	<h2>Заголовок окна</h2>
-	          	<div class="content">
-	           	<p>Содержание</p>
-	           		<p>Модальное окно фиксированной ширины</p>
-	          	</div>
-	        </div>
-	    </div>
+					<div class="field">
+						<label for ="password">Password</label>
+						<input type ="password" name="password" id="password"> characters and numbers
+					</div>	
+					
+					<div class="field">
+						<label for ="password_again">Password Again</label>
+						<input type ="password" name="password_again" id="password_again">
+					</div>	
+
+					<div class="field">
+						<label for ="frname">Frst name</label>
+						<input type ="text" name="frname" id="frname" value="<?php echo escape(Input::get("frname"))?>">
+					</div>	
+
+					<div class="field">
+						<label for ="lsname">Last name</label>
+						<input type ="text" name="lsname" id="lsname" value="<?php echo escape(Input::get("lsname"))?>">
+					</div>	
+
+					<div class="field">
+						<label for ="eml">Email</label>
+						<input type ="text" name="eml" id="eml" value="<?php echo escape(Input::get("eml"))?>" >test@test.com
+					</div>	
+
+				 	<div class="field">
+						<label for ="phne">Phone +7</label>
+						<input type ="text" name="phne" id="phne" value="<?php echo escape(Input::get("phne"))?>">1231231231
+					</div>
+					<input type = "hidden" name = "token" value="<?php echo escape(Session::get('token')) ?>">
+					<input type ="submit" value = "register">
+				</form> 
+          	</div>
+        </div>
+    </div>
+</div>
+
+<!-- нужный див для работы бибилиоткеи fullpage.js -->
+<div id="fullpage">
+	 <!-- первая главная страничка -->
+	<div class="section" id="section1">
+		<ul>
+			<li><h1>MyPolls.ru</h1></li>
+			<li><h1>Создание опросов</h1></li>
+			<li><h1>Просто и удобно</h1></li>
+			<li><div></div></li>
+			<li class="begin"><a href="modal"><h5>НАЧНИТЕ ПРЯМО СЕЙЧАС</h5></a></li>
+		</ul>
+	</div>
+	<!-- вторая страничка "с нами нет ничего сложного" -->
+	<div class="section" id="section2">
+		<ul>
+			<li><h2>С нами нет ничего сложного:</h2></li>
+			<li>
+				<ul>
+					<li><h4>Вы создаете<br>опрос</h4></li>
+					<li><img src="svg/icon1.svg" width="150" alt=""></li>
+					<li><p class="firstP">Удобная панель для<br>конструирования<br>опросов</p></li>
+				</ul>
+				<ul>
+					<li><h4>Собираете<br>ответы</h4></li>
+					<li><img src="svg/icon2.svg" width="150" alt=""></li>
+					<li><p class="secondP">Большое количество<br>активных<br>респондентов</p></li>
+				</ul>
+				<ul>
+					<li><h4>Получаете<br>результат</h4></li>
+					<li><img src="svg/icon3.svg" width="170" alt=""></li>
+					<li><p class="thirdP">Результат в нужном<br>вам формате,<br>графики и диаграммы</p></li>
+				</ul>
+			</li>		
+		</ul>	
+
 	</div>
 
 	<!-- нужный див для работы бибилиоткеи fullpage.js -->

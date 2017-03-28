@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic-ext");
 html,
 body,
@@ -54,20 +53,24 @@ a:focus:after {
 
 #wrapMenu {
   width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
-  /* Safari */
   display: flex;
-  /*отображает контейнер как блочный элемент*/
-  justify-content: space-between;
+  -webkit-justify-content: space-between;
+    -webkit-justify-content--ms-flex-pack: justify;
+    -webkit-justify-content-justify-content: space-between;
   background-color: white;
   position: fixed;
   z-index: 70; }
 
 .menu {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
-  /* Safari */
   display: flex;
-  /*отображает контейнер как блочный элемент*/
   list-style: none; }
   .menu li {
     padding: 25px; }
@@ -94,11 +97,14 @@ a:focus:after {
   #fullpage #section1 .begin a:after {
     height: 0px; }
   #fullpage #section1 ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: -webkit-flex;
-    /* Safari */
     display: flex;
-    /*отображает контейнер как блочный элемент*/
-    flex-direction: column; }
+    -webkit-flex-direction: column;
+      -webkit-flex-direction--ms-flex-direction: column;
+        -webkit-flex-direction--ms-flex-direction-flex-direction: column; }
     #fullpage #section1 ul li {
       margin: auto; }
       #fullpage #section1 ul li div {
@@ -128,11 +134,14 @@ a:focus:after {
   #fullpage #section2 p {
     opacity: 0; }
   #fullpage #section2 ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: -webkit-flex;
-    /* Safari */
     display: flex;
-    /*отображает контейнер как блочный элемент*/
-    flex-direction: column; }
+    -webkit-flex-direction: column;
+      -webkit-flex-direction--ms-flex-direction: column;
+        -webkit-flex-direction--ms-flex-direction-flex-direction: column; }
     #fullpage #section2 ul li {
       margin: auto;
       color: white; }
@@ -150,32 +159,45 @@ a:focus:after {
         text-align: center; }
     #fullpage #section2 ul li:nth-child(2) {
       width: 84%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
       display: -webkit-flex;
-      /* Safari */
       display: flex;
-      /*отображает контейнер как блочный элемент*/
-      justify-content: space-around; }
+      -webkit-justify-content: space-around;
+        -webkit-justify-content--ms-flex-pack: distribute;
+          -webkit-justify-content--ms-flex-pack-justify-content: space-around; }
 
 #fullpage #section3 .wr {
   width: 200%;
   overflow: hidden; }
 
 #fullpage #section3 ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
-  /* Safari */
   display: flex;
-  /*отображает контейнер как блочный элемент*/
-  justify-content: space-around;
-  align-items: center; }
+  -webkit-justify-content: space-around;
+    -webkit-justify-content--ms-flex-pack: distribute;
+      -webkit-justify-content--ms-flex-pack-justify-content: space-around;
+  -webkit-align-items: center;
+    -webkit-align-items--ms-flex-align: center;
+      -webkit-align-items--ms-flex-align-align-items: center; }
   #fullpage #section3 ul li {
     margin: 25px 0; }
     #fullpage #section3 ul li ul {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
       display: -webkit-flex;
-      /* Safari */
       display: flex;
-      /*отображает контейнер как блочный элемент*/
-      flex-direction: column;
-      align-items: baseline; }
+      -webkit-flex-direction: column;
+        -webkit-flex-direction--ms-flex-direction: column;
+          -webkit-flex-direction--ms-flex-direction-flex-direction: column;
+      -webkit-align-items: baseline;
+        -webkit-align-items--ms-flex-align: baseline;
+          -webkit-align-items--ms-flex-align-align-items: baseline; }
 
 #fullpage #section4 {
   background: #ffde00;
@@ -189,13 +211,20 @@ a:focus:after {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffde00', endColorstr='#fce835',GradientType=1 );
   /* IE6-9 */ }
   #fullpage #section4 .section4Ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: -webkit-flex;
-    /* Safari */
     display: flex;
-    /*отображает контейнер как блочный элемент*/
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    -webkit-flex-direction: row;
+      -webkit-flex-direction--ms-flex-direction: row;
+        -webkit-flex-direction--ms-flex-direction-flex-direction: row;
+    -webkit-justify-content: space-around;
+      -webkit-justify-content--ms-flex-pack: distribute;
+        -webkit-justify-content--ms-flex-pack-justify-content: space-around;
+    -webkit-align-items: center;
+      -webkit-align-items--ms-flex-align: center;
+        -webkit-align-items--ms-flex-align-align-items: center;
     height: 100%; }
   #fullpage #section4 .leftSectionLi {
     height: 100%;
@@ -224,30 +253,49 @@ a:focus:after {
       #fullpage #section4 .leftSection ul.secondManager p {
         margin-right: 96px; }
     #fullpage #section4 .leftSection ul {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
       display: -webkit-flex;
-      /* Safari */
       display: flex;
-      /*отображает контейнер как блочный элемент*/
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      -webkit-flex-direction: column;
+        -webkit-flex-direction--ms-flex-direction: column;
+          -webkit-flex-direction--ms-flex-direction-flex-direction: column;
+      -webkit-justify-content: center;
+        -webkit-justify-content--ms-flex-pack: center;
+          -webkit-justify-content--ms-flex-pack-justify-content: center;
+      -webkit-align-items: center;
+        -webkit-align-items--ms-flex-align: center;
+          -webkit-align-items--ms-flex-align-align-items: center;
       height: 100%; }
       #fullpage #section4 .leftSection ul ul {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
         display: -webkit-flex;
-        /* Safari */
         display: flex;
-        /*отображает контейнер как блочный элемент*/
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center; }
+        -webkit-flex-direction: row;
+          -webkit-flex-direction--ms-flex-direction: row;
+            -webkit-flex-direction--ms-flex-direction-flex-direction: row;
+        -webkit-justify-content: space-around;
+          -webkit-justify-content--ms-flex-pack: distribute;
+            -webkit-justify-content--ms-flex-pack-justify-content: space-around;
+        -webkit-align-items: center;
+          -webkit-align-items--ms-flex-align: center;
+            -webkit-align-items--ms-flex-align-align-items: center; }
         #fullpage #section4 .leftSection ul ul ul {
           color: white;
-            color-display: -webkit-flex;
-          color-/* Safari */
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
           display: flex;
-          /*отображает контейнер как блочный элемент*/
-          flex-direction: column;
-          align-items: flex-end; }
+          -webkit-flex-direction: column;
+            -webkit-flex-direction--ms-flex-direction: column;
+              -webkit-flex-direction--ms-flex-direction-flex-direction: column;
+          -webkit-align-items: flex-end;
+            -webkit-align-items--ms-flex-align: end;
+              -webkit-align-items--ms-flex-align-align-items: flex-end; }
   #fullpage #section4 .rightSectionLi {
     height: 100%;
     width: 40%; }
@@ -266,13 +314,20 @@ a:focus:after {
       #fullpage #section4 .rightSectionLi .rightSection p:first-letter {
         font-weight: 300; }
       #fullpage #section4 .rightSectionLi .rightSection ul {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
         display: -webkit-flex;
-        /* Safari */
         display: flex;
-        /*отображает контейнер как блочный элемент*/
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+        -webkit-flex-direction: column;
+          -webkit-flex-direction--ms-flex-direction: column;
+            -webkit-flex-direction--ms-flex-direction-flex-direction: column;
+        -webkit-justify-content: space-around;
+          -webkit-justify-content--ms-flex-pack: distribute;
+            -webkit-justify-content--ms-flex-pack-justify-content: space-around;
+        -webkit-align-items: center;
+          -webkit-align-items--ms-flex-align: center;
+            -webkit-align-items--ms-flex-align-align-items: center;
         height: 100%;
         padding: 50px; }
         #fullpage #section4 .rightSectionLi .rightSection ul li:nth-child(2) p {

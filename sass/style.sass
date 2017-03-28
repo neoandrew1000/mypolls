@@ -4,17 +4,25 @@
 
 #wrapMenu
 	width: 100%
-	display: -webkit-flex; /* Safari */
-	display: flex; /*отображает контейнер как блочный элемент*/	
-	justify-content: space-between
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	-webkit-justify-content: space-between
+    -ms-flex-pack: justify
+    justify-content: space-between
 	background-color: white
 	position: fixed
 	z-index: 70	
 
 
 .menu
-	display: -webkit-flex; /* Safari */
-	display: flex; /*отображает контейнер как блочный элемент*/
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex	
 	list-style: none;
 
 	li
@@ -48,9 +56,14 @@
 				height: 0px
 
 		ul
-			display: -webkit-flex; /* Safari */
-			display: flex; /*отображает контейнер как блочный элемент*/
-			flex-direction: column
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex	
+			-webkit-flex-direction: column
+    		-ms-flex-direction: column
+        	flex-direction: column
 
 			li
 				margin: auto
@@ -96,9 +109,14 @@
 			opacity: 0
 
 		ul
-			display: -webkit-flex; /* Safari */
-			display: flex; /*отображает контейнер как блочный элемент*/
-			flex-direction: column	
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex	
+			-webkit-flex-direction: column
+    		-ms-flex-direction: column
+        	flex-direction: column	
 
 			li
 				margin: auto
@@ -120,9 +138,14 @@
 	
 			li:nth-child(2) //3 пункта под заголовком
 				width: 84%	
-				display: -webkit-flex; /* Safari */
-				display: flex; /*отображает контейнер как блочный элемент*/
-				justify-content: space-around					
+				display: -webkit-box
+				display: -moz-box
+				display: -ms-flexbox
+				display: -webkit-flex
+				display: flex
+				-webkit-justify-content: space-around
+    			-ms-flex-pack: distribute
+        		justify-content: space-around					
 
 	#section3
 		.wr
@@ -132,19 +155,33 @@
 
 
 		ul
-			display: -webkit-flex; /* Safari */
-			display: flex; /*отображает контейнер как блочный элемент*/
-			justify-content: space-around
-			align-items: center
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex	
+			-webkit-justify-content: space-around
+    		-ms-flex-pack: distribute
+        	justify-content: space-around
+			-webkit-align-items: center
+    		-ms-flex-align: center
+        	align-items: center
 
 			li
 				margin: 25px 0
 
 				ul
-					display: -webkit-flex; /* Safari */
-					display: flex; /*отображает контейнер как блочный элемент*/
-					flex-direction: column
-					align-items: baseline
+					display: -webkit-box
+					display: -moz-box
+					display: -ms-flexbox
+					display: -webkit-flex
+					display: flex	
+					-webkit-flex-direction: column
+    				-ms-flex-direction: column
+        			flex-direction: column
+					-webkit-align-items: baseline
+    				-ms-flex-align: baseline
+        			align-items: baseline
 
 	#section4
 		background: #ffde00; /* Old browsers */
@@ -154,11 +191,20 @@
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffde00', endColorstr='#fce835',GradientType=1 ); /* IE6-9 */
 		
 		.section4Ul
-			display: -webkit-flex; /* Safari */
-			display: flex; /*отображает контейнер как блочный элемент*/
-			flex-direction: row
-			justify-content: space-around
-			align-items: center	
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex	
+			-webkit-flex-direction: row
+    		-ms-flex-direction: row
+        	flex-direction: row
+			-webkit-justify-content: space-around
+		    -ms-flex-pack: distribute
+	        justify-content: space-around
+			-webkit-align-items: center
+		    -ms-flex-align: center
+	        align-items: center	
 			height: 100%	
 		.leftSectionLi
 			height: 100%
@@ -193,26 +239,51 @@
 					margin-right: 96px				
 
 			ul // вертикальный flex-box левой секции
-				display: -webkit-flex; /* Safari */
-				display: flex; /*отображает контейнер как блочный элемент*/
-				flex-direction: column	
-				justify-content: center
-				align-items: center
+				display: -webkit-box
+				display: -moz-box
+				display: -ms-flexbox
+				display: -webkit-flex
+				display: flex	
+				-webkit-flex-direction: column
+    			-ms-flex-direction: column
+        		flex-direction: column
+				-webkit-justify-content: center
+			    -ms-flex-pack: center
+		        justify-content: center
+				-webkit-align-items: center
+			    -ms-flex-align: center
+		        align-items: center
 				height: 100%	
 
 				ul //горизонтальный flex-box n-го менеджера
-					display: -webkit-flex; /* Safari */
-					display: flex; /*отображает контейнер как блочный элемент*/
-					flex-direction: row
-					justify-content: space-around
-					align-items: center
+					display: -webkit-box
+					display: -moz-box
+					display: -ms-flexbox
+					display: -webkit-flex
+					display: flex	
+					-webkit-flex-direction: row
+    				-ms-flex-direction: row
+        			flex-direction: row
+					-webkit-justify-content: space-around
+    				-ms-flex-pack: distribute
+        			justify-content: space-around
+					-webkit-align-items: center
+    				-ms-flex-align: center
+        			align-items: center
 
 					ul //вертикальный flex-box имени/специальности 1-го менеджера
 						color: white
-                        display: -webkit-flex; /* Safari */
-						display: flex; /*отображает контейнер как блочный элемент*/
-						flex-direction: column		
-						align-items: flex-end						
+						display: -webkit-box
+						display: -moz-box
+						display: -ms-flexbox
+						display: -webkit-flex
+						display: flex	                        
+						-webkit-flex-direction: column
+    					-ms-flex-direction: column
+        				flex-direction: column
+						-webkit-align-items: flex-end
+    					-ms-flex-align: end
+        				align-items: flex-end						
 		
 		.rightSectionLi
 			height: 100%
@@ -234,11 +305,20 @@
 					font-weight: 300
 
 				ul // вертикальный flex-box правой секции
-					display: -webkit-flex; /* Safari */
-					display: flex; /*отображает контейнер как блочный элемент*/
-					flex-direction: column	
-					justify-content: space-around
-					align-items: center
+					display: -webkit-box
+					display: -moz-box
+					display: -ms-flexbox
+					display: -webkit-flex
+					display: flex						
+					-webkit-flex-direction: column
+    				-ms-flex-direction: column
+        			flex-direction: column
+					-webkit-justify-content: space-around
+   					-ms-flex-pack: distribute
+        			justify-content: space-around
+					-webkit-align-items: center
+    				-ms-flex-align: center
+        			align-items: center
 					height: 100%	
 					padding: 50px
 

@@ -106,7 +106,8 @@ a:focus:after {
       -webkit-flex-direction--ms-flex-direction: column;
         -webkit-flex-direction--ms-flex-direction-flex-direction: column; }
     #fullpage #section1 ul li {
-      margin: auto; }
+      margin: auto;
+      text-align: center; }
       #fullpage #section1 ul li div {
         width: 100vw;
         height: 295px;
@@ -124,7 +125,8 @@ a:focus:after {
     #fullpage #section1 ul li:nth-child(5) h5 {
       border: solid 1px #191919;
       margin-top: 10px;
-      padding: 5px 15px 6px 15px; }
+      padding: 5px 15px 6px 15px;
+      display: inline-block; }
 
 #fullpage #section2 {
   background-image: url(../../../img/bg2.jpg);
@@ -144,7 +146,8 @@ a:focus:after {
         -webkit-flex-direction--ms-flex-direction-flex-direction: column; }
     #fullpage #section2 ul li {
       margin: auto;
-      color: white; }
+      color: white;
+      text-align: center; }
       #fullpage #section2 ul li h2 {
         color: white;
         font-weight: 400;

@@ -1,361 +1,451 @@
 // style.sass
 @import global.sass
 
-
-#wrapMenu
-	width: 100%
-	display: -webkit-box
-	display: -moz-box
-	display: -ms-flexbox
-	display: -webkit-flex
-	display: flex
-	-webkit-justify-content: space-between
-    -ms-flex-pack: justify
-    justify-content: space-between
-	background-color: white
-	position: fixed
-	z-index: 70	
-
-
-.menu
-	display: -webkit-box
-	display: -moz-box
-	display: -ms-flexbox
-	display: -webkit-flex
-	display: flex	
-	list-style: none;
-
-	li
-		padding: 25px
-
-#leftMenu
-	margin-left: 5%
-
-#rightMenu
-	margin-right: 5%
-
-	.registration
-		border: solid 1px $d-d-gray
-		padding: 4px 9px 5px 9px
-		margin: 21px 16px 20px 16px
-		button
-			background-color: transparent
-			border: none
-			font-size: 100%
-			font-weight: 100
-		button:hover
-			font-weight: 300
+@media (max-width: 1920px)
+	#wrapMenu
+		width: 100%
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-webkit-justify-content: space-between
+	    -ms-flex-pack: justify
+	    justify-content: space-between
+		background-color: white
+		position: fixed
+		z-index: 70	
 
 
-#fullpage	
+	.menu
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex	
+		list-style: none;
 
-	#section1
-		opacity: 0
-		.begin
-			a:after
-				height: 0px
+		li
+			padding: 25px
+			font-size: 150%
 
-		ul
-			display: -webkit-box
-			display: -moz-box
-			display: -ms-flexbox
-			display: -webkit-flex
-			display: flex	
-			-webkit-flex-direction: column
-    		-ms-flex-direction: column
-        	flex-direction: column
+	#leftMenu
+		margin-left: 5%
 
-			li
-				margin: auto
-				text-align: center
+	#rightMenu
+		margin-right: 5%
 
-				div // логотип
-					width: 100vw
-					height: 295px
-					background-image: url(../../../svg/logo.svg)
-					background-size: cover
-					background-position: 50% 50%
-
-			li:nth-child(-n+3) //первые 3 элемента списка
-
-				h1
-					font-weight: 100 				
-			li:nth-child(1)
-
-				h1
-					color: $d-d-gray
-			li:nth-child(2)
-
-				margin-top: -14px
-			li:nth-child(3)
-
-				margin-top: -14px
-			li:nth-child(5)
-
-				h5
-					border: solid 1px $d-d-gray
-					margin-top: 10px
-					padding: 5px 15px 6px 15px	
-					display: inline-block					
-			
+		.registration
+			border: solid 1px $d-d-gray
+			padding: 4px 9px 5px 9px
+			margin: 21px 16px 20px 16px
+			button
+				background-color: transparent
+				border: none
+				font-size: 100%
+				font-weight: 100
+			button:hover
+				font-weight: 300
 
 
+	#fullpage	
 
-
-	#section2
-		background-image: url(../../../img/bg2.jpg)
-		background-size: cover
-		img
+		#section1
 			opacity: 0
-		p
-			opacity: 0
+			.begin
+				a:after
+					height: 0px
 
-		ul
-			display: -webkit-box
-			display: -moz-box
-			display: -ms-flexbox
-			display: -webkit-flex
-			display: flex	
-			-webkit-flex-direction: column
-    		-ms-flex-direction: column
-        	flex-direction: column	
-
-			li
-				margin: auto
-				color: white
-				text-align: center
-
-				h2
-					color: white
-					font-weight: 400
-					margin-bottom: 50px
-					opacity: 0					
-				h4
-					color: white
-					font-weight: 300
-					margin-bottom: 20px 
-					opacity: 0	
-				
-				li
-					text-align: center		
-	
-			li:nth-child(2) //3 пункта под заголовком
-				width: 84%	
-				display: -webkit-box
-				display: -moz-box
-				display: -ms-flexbox
-				display: -webkit-flex
-				display: flex
-				-webkit-justify-content: space-around
-    			-ms-flex-pack: distribute
-        		justify-content: space-around					
-
-	#section3
-		.wr
-			width: 200%
-			overflow: hidden
-
-
-
-		ul
-			display: -webkit-box
-			display: -moz-box
-			display: -ms-flexbox
-			display: -webkit-flex
-			display: flex	
-			-webkit-justify-content: space-around
-    		-ms-flex-pack: distribute
-        	justify-content: space-around
-			-webkit-align-items: center
-    		-ms-flex-align: center
-        	align-items: center
-
-			li
-				margin: 25px 0
-
-				ul
-					display: -webkit-box
-					display: -moz-box
-					display: -ms-flexbox
-					display: -webkit-flex
-					display: flex	
-					-webkit-flex-direction: column
-    				-ms-flex-direction: column
-        			flex-direction: column
-					-webkit-align-items: baseline
-    				-ms-flex-align: baseline
-        			align-items: baseline
-
-	#section4
-		background: #ffde00; /* Old browsers */
-		background: -moz-linear-gradient(left,  #ffde00 73%, #ffdd00 73%, #fce835 100%); /* FF3.6-15 */
-		background: -webkit-linear-gradient(left,  #ffde00 73%,#ffdd00 73%,#fce835 100%); /* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(to right,  #ffde00 73%,#ffdd00 73%,#fce835 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffde00', endColorstr='#fce835',GradientType=1 ); /* IE6-9 */
-		
-		.section4Ul
-			display: -webkit-box
-			display: -moz-box
-			display: -ms-flexbox
-			display: -webkit-flex
-			display: flex	
-			-webkit-flex-direction: row
-    		-ms-flex-direction: row
-        	flex-direction: row
-			-webkit-justify-content: space-around
-		    -ms-flex-pack: distribute
-	        justify-content: space-around
-			-webkit-align-items: center
-		    -ms-flex-align: center
-	        align-items: center	
-			height: 100%	
-		.leftSectionLi
-			height: 100%
-			width: 60%
-
-		.leftSection//левая секция
-			height: 100%
-			background-image: url(../../../img/sl4img1.jpg)
-			background-size: cover
-
-			h4 //заголовок с ФИ n-го менеджера
-				border-bottom: solid 1px white
-				padding-left: 80px	
-				margin-left: 30px
-				color: white	
-				font-weight: 100	
-			p
-				font-size: 75%
-				margin-top: -2px 
-			ul.firstManager
-				margin-right: 10px
-				margin-bottom: 155px
-				opacity: 0
-
-				p
-					margin-right: 228px	
-
-			ul.secondManager
-				opacity: 0
-
-				p
-					margin-right: 96px				
-
-			ul // вертикальный flex-box левой секции
+			ul
 				display: -webkit-box
 				display: -moz-box
 				display: -ms-flexbox
 				display: -webkit-flex
 				display: flex	
 				-webkit-flex-direction: column
-    			-ms-flex-direction: column
-        		flex-direction: column
-				-webkit-justify-content: center
-			    -ms-flex-pack: center
-		        justify-content: center
+	    		-ms-flex-direction: column
+	        	flex-direction: column
+
+				li
+					margin: auto
+					text-align: center
+
+					div // логотип
+						width: 100vw
+						height: 490px
+						background-image: url(../../../svg/logo.svg)
+						background-size: cover
+						background-position: 50% 50%
+
+				li:nth-child(-n+3) //первые 3 элемента списка
+
+					h1
+						font-weight: 100 				
+				li:nth-child(1)
+
+					h1
+						color: $d-d-gray
+				li:nth-child(2)
+
+					margin-top: -14px
+				li:nth-child(3)
+
+					margin-top: -14px
+				li:nth-child(5)
+
+					h5
+						border: solid 1px $d-d-gray
+						margin-top: 10px
+						padding: 5px 15px 6px 15px	
+						display: inline-block					
+				
+
+
+
+
+		#section2
+			background-image: url(../../../img/bg2.jpg)
+			background-size: cover
+			img
+				opacity: 0
+			p
+				opacity: 0
+
+			ul
+				display: -webkit-box
+				display: -moz-box
+				display: -ms-flexbox
+				display: -webkit-flex
+				display: flex	
+				-webkit-flex-direction: column
+	    		-ms-flex-direction: column
+	        	flex-direction: column	
+
+				li
+					margin: auto
+					color: white
+					text-align: center
+
+					h2
+						color: white
+						font-weight: 400
+						margin-top: 50px
+						margin-bottom: 100px
+						opacity: 0					
+					h4
+						color: white
+						font-weight: 300
+						margin-bottom: 20px 
+						opacity: 0	
+					
+					li
+						text-align: center		
+		
+				li:nth-child(2) //3 пункта под заголовком
+					width: 65%	
+					display: -webkit-box
+					display: -moz-box
+					display: -ms-flexbox
+					display: -webkit-flex
+					display: flex
+					-webkit-justify-content: space-around
+	    			-ms-flex-pack: distribute
+	        		justify-content: space-around					
+
+		#section3
+			.wr
+				width: 200%
+				overflow: hidden
+
+
+
+
+			ul
+				display: -webkit-box
+				display: -moz-box
+				display: -ms-flexbox
+				display: -webkit-flex
+				display: flex	
+				-webkit-justify-content: space-around
+	    		-ms-flex-pack: distribute
+	        	justify-content: space-around
+				-webkit-align-items: center
+	    		-ms-flex-align: center
+	        	align-items: center
+
+				li
+					margin: 25px 0
+					img
+						width: 800px
+
+					ul
+						display: -webkit-box
+						display: -moz-box
+						display: -ms-flexbox
+						display: -webkit-flex
+						display: flex	
+						-webkit-flex-direction: column
+	    				-ms-flex-direction: column
+	        			flex-direction: column
+						-webkit-align-items: baseline
+	    				-ms-flex-align: baseline
+	        			align-items: baseline
+						li
+							h5
+								font-size: 190%	        		
+
+		#section4
+			background: #ffde00; /* Old browsers */
+			background: -moz-linear-gradient(left,  #ffde00 73%, #ffdd00 73%, #fce835 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(left,  #ffde00 73%,#ffdd00 73%,#fce835 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to right,  #ffde00 73%,#ffdd00 73%,#fce835 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffde00', endColorstr='#fce835',GradientType=1 ); /* IE6-9 */
+			
+			.section4Ul
+				display: -webkit-box
+				display: -moz-box
+				display: -ms-flexbox
+				display: -webkit-flex
+				display: flex	
+				-webkit-flex-direction: row
+	    		-ms-flex-direction: row
+	        	flex-direction: row
+				-webkit-justify-content: space-around
+			    -ms-flex-pack: distribute
+		        justify-content: space-around
 				-webkit-align-items: center
 			    -ms-flex-align: center
-		        align-items: center
+		        align-items: center	
 				height: 100%	
+			.leftSectionLi
+				height: 100%
+				width: 60%
 
-				ul //горизонтальный flex-box n-го менеджера
+			.leftSection//левая секция
+				height: 100%
+				background-image: url(../../../img/sl4img1.jpg)
+				background-size: cover
+
+				h4 //заголовок с ФИ n-го менеджера
+					border-bottom: solid 1px white
+					padding-left: 80px	
+					margin-left: 30px
+					color: white	
+					font-weight: 100	
+					font-size: 250%
+				p
+					font-size: 105%
+					margin-top: -2px 
+				ul.firstManager
+					margin-right: 10px
+					margin-bottom: 155px
+					opacity: 0
+
+					p
+						margin-right: 285px	
+
+				ul.secondManager
+					opacity: 0
+
+					p
+						margin-right: 99px				
+
+				ul // вертикальный flex-box левой секции
 					display: -webkit-box
 					display: -moz-box
 					display: -ms-flexbox
 					display: -webkit-flex
 					display: flex	
-					-webkit-flex-direction: row
-    				-ms-flex-direction: row
-        			flex-direction: row
-					-webkit-justify-content: space-around
-    				-ms-flex-pack: distribute
-        			justify-content: space-around
+					-webkit-flex-direction: column
+	    			-ms-flex-direction: column
+	        		flex-direction: column
+					-webkit-justify-content: center
+				    -ms-flex-pack: center
+			        justify-content: center
 					-webkit-align-items: center
-    				-ms-flex-align: center
-        			align-items: center
+				    -ms-flex-align: center
+			        align-items: center
+					height: 100%	
 
-					ul //вертикальный flex-box имени/специальности 1-го менеджера
-						color: white
+					ul //горизонтальный flex-box n-го менеджера
 						display: -webkit-box
 						display: -moz-box
 						display: -ms-flexbox
 						display: -webkit-flex
-						display: flex	                        
-						-webkit-flex-direction: column
-    					-ms-flex-direction: column
-        				flex-direction: column
-						-webkit-align-items: flex-end
-    					-ms-flex-align: end
-        				align-items: flex-end						
-		
-		.rightSectionLi
-			height: 100%
-			width: 40%
-			.rightSection
+						display: flex	
+						-webkit-flex-direction: row
+	    				-ms-flex-direction: row
+	        			flex-direction: row
+						-webkit-justify-content: space-around
+	    				-ms-flex-pack: distribute
+	        			justify-content: space-around
+						-webkit-align-items: center
+	    				-ms-flex-align: center
+	        			align-items: center
+
+						ul //вертикальный flex-box имени/специальности 1-го менеджера
+							color: white
+							display: -webkit-box
+							display: -moz-box
+							display: -ms-flexbox
+							display: -webkit-flex
+							display: flex	                        
+							-webkit-flex-direction: column
+	    					-ms-flex-direction: column
+	        				flex-direction: column
+							-webkit-align-items: flex-end
+	    					-ms-flex-align: end
+	        				align-items: flex-end						
+			
+			.rightSectionLi
 				height: 100%
-				h3
-					font-weight: 100
-					margin-top: 100px
-					opacity: 0
-				p
-					font-size: 150%
-					font-weight: 100
-					margin-top: -55px
-					padding: 25px  0 0 25px
-					opacity: 0
+				width: 40%
+				.rightSection
+					height: 100%
+					h3
+						font-weight: 100
+						margin: 100px 100px 0 100px
+						opacity: 0
+						font-size: 280%
+					p
+						font-size: 190%
+						font-weight: 100
+						margin-top: -55px
+						padding: 25px  0 0 25px
+						opacity: 0
 
-				p:first-letter
-					font-weight: 300
+					p:first-letter
+						font-weight: 300
 
-				ul // вертикальный flex-box правой секции
-					display: -webkit-box
-					display: -moz-box
-					display: -ms-flexbox
-					display: -webkit-flex
-					display: flex						
-					-webkit-flex-direction: column
-    				-ms-flex-direction: column
-        			flex-direction: column
-					-webkit-justify-content: space-around
-   					-ms-flex-pack: distribute
-        			justify-content: space-around
-					-webkit-align-items: center
-    				-ms-flex-align: center
-        			align-items: center
-					height: 100%	
-					padding: 50px
+					ul // вертикальный flex-box правой секции
+						display: -webkit-box
+						display: -moz-box
+						display: -ms-flexbox
+						display: -webkit-flex
+						display: flex						
+						-webkit-flex-direction: column
+	    				-ms-flex-direction: column
+	        			flex-direction: column
+						-webkit-justify-content: space-around
+	   					-ms-flex-pack: distribute
+	        			justify-content: space-around
+						-webkit-align-items: center
+	    				-ms-flex-align: center
+	        			align-items: center
+						height: 100%	
+						padding: 50px
 
-					li:nth-child(2)	
-						p
-							border-top: solid 1px $d-yellow
+						li:nth-child(2)	
+							p
+								border-top: solid 1px $d-yellow
 
-	#section5
-		background-image: url(../../../img/demo.jpg)
-		background-size: cover
-	#section6
-		background-image: url(../../../img/demo2.jpg)
-		background-size: cover	
+		#section5
+			background-image: url(../../../img/demo.jpg)
+			background-size: cover
+		#section6
+			background-image: url(../../../img/demo2.jpg)
+			background-size: cover	
 
-#modalRegistration	
-	position: fixed
-	z-index: 9999
-	width: 100%
-	height: 100%	
-	.overlay
-		background-color: rgba(54,54,54,.9)
-		width: 100%
-		height: 100%
-		margin: 0
+	#modalRegistration	
 		position: fixed
-	.visible
-		width: 40%
-		height: 80%
-		margin: 5% 30%
-		background-color: white
-		color: $d-d-gray
+		z-index: 9999
+		width: 100%
+		height: 100%	
+		.overlay
+			background-color: rgba(54,54,54,.9)
+			width: 100%
+			height: 100%
+			margin: 0
+			position: fixed
+		.visible
+			width: 40%
+			height: 80%
+			margin: 5% 30%
+			background-color: white
+			color: $d-d-gray
 
+@media (max-width: 1366px)
+	.menu
+		li
+			font-size: 100%
 
+	#fullpage	
+		#section1
+			ul
+				li
+					div
+						height: 295px
+				
+		#section2
+			ul
+				li
+					h2
+						margin-top: 0px
+						margin-bottom: 50px	
+				li:nth-child(2)
+					width: 84%
 
+		#section3
+			ul
+				li
+					img
+						width: 600px		
+					ul
+						li
+							h5
+								font-size: 140%			
+
+		#section4
+			.leftSection
+				h4 	
+					font-size: 180%//ОСТАВИТЬ
+				p
+					font-size: 75%//ОСТАВИТЬ
+				ul.firstManager
+					p
+						margin-right: 228px//ОСТАВИТЬ
+
+				ul.secondManager
+					p
+						margin-right: 96px//ОСТАВИТЬ			
+
+			.rightSectionLi
+				.rightSection
+					h3
+						margin-top: 100px 0 0 0//ОСТАВИТЬ
+						font-size: 220%//ОСТАВИТЬ
+					p
+						font-size: 150%//ОСТАВИТЬ
+
+	/*#modalRegistration	
+		position: fixed
+		z-index: 9999
+		width: 100%
+		height: 100%	
+		.overlay
+			background-color: rgba(54,54,54,.9)
+			width: 100%
+			height: 100%
+			margin: 0
+			position: fixed
+		.visible
+			width: 40%
+			height: 80%
+			margin: 5% 30%
+			background-color: white
+			color: $d-d-gray*/
+
+//@media (orientation: landscape) and (max-width: 1024px)
+
+//@media (orientation: landscape) and (max-width: 768px)
+
+//@media (orientation: portrait) and (max-width: 1024px)
+
+//@media (orientation: portrait) and (max-width: 768px)
+
+//@media (orientation: portrait) and (max-width: 600px)
+
+//@media (orientation: portrait) and (max-width: 375px)
 											
 
 

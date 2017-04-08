@@ -404,3 +404,16 @@ a:focus:after {
 			margin: 5% 30%
 			background-color: white
 			color: $d-d-gray*/ }
+
+@media (orientation: landscape) and (max-width: 1024px) {
+  #fullpage #section2 ul li h2 {
+    margin-top: 60px;
+    margin-bottom: 50px; }
+  #fullpage #section3 ul li img {
+    width: 500px; }
+  #fullpage #section3 ul li ul li h5 {
+    font-size: 120%; }
+  #fullpage #section4 .rightSectionLi .rightSection h3 {
+    font-size: 190%; }
+  #fullpage #section4 .rightSectionLi .rightSection p {
+    font-size: 110%; } }

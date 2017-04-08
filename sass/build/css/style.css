@@ -417,3 +417,60 @@ a:focus:after {
     font-size: 190%; }
   #fullpage #section4 .rightSectionLi .rightSection p {
     font-size: 110%; } }
+
+@media (orientation: landscape) and (max-width: 768px) {
+  #leftMenu {
+    font-size: 90%; }
+  #rightMenu .registration button {
+    font-size: 90%; }
+  #fullpage #section1 h1 {
+    font-size: 180%; }
+  #fullpage #section1 h5 {
+    font-size: 100%; }
+  #fullpage #section1 ul li:nth-child(1) {
+    margin-top: 30px; }
+  #fullpage #section1 ul li:nth-child(2) {
+    margin-top: -4px; }
+  #fullpage #section1 ul li:nth-child(3) {
+    margin-top: -4px; }
+  #fullpage #section1 ul li div {
+    height: 150px; }
+  #fullpage #section2 ul {
+    height: 90%; }
+    #fullpage #section2 ul li img {
+      width: 100px; }
+    #fullpage #section2 ul li h2 {
+      font-size: 140%;
+      margin: 74px 0 18px 0; }
+    #fullpage #section2 ul li h4 {
+      font-size: 120%;
+      margin-bottom: 0; }
+    #fullpage #section2 ul li p {
+      font-size: 80%;
+      margin-top: 0; }
+  #fullpage #section3 .wr {
+    margin-top: 6%; }
+  #fullpage #section3 ul li {
+    margin: 10px 0; }
+    #fullpage #section3 ul li img {
+      width: 300px; }
+    #fullpage #section3 ul li ul li h5 {
+      font-size: 90%; }
+  #fullpage #section4 .leftSection img {
+    width: 75px; }
+  #fullpage #section4 .leftSection h4 {
+    font-size: 120%; }
+  #fullpage #section4 .leftSection ul.firstManager {
+    margin: 20% 0; }
+    #fullpage #section4 .leftSection ul.firstManager p {
+      margin-right: 146px; }
+  #fullpage #section4 .leftSection ul.secondManager p {
+    margin-right: 10px; }
+  #fullpage #section4 .rightSectionLi .rightSection h3 {
+    margin: 30px 30px 0 10px;
+    font-size: 120%; }
+  #fullpage #section4 .rightSectionLi .rightSection p {
+    font-size: 80%;
+    font-weight: 100;
+    margin-top: -55px;
+    padding: 25px  0 0 25px; } }

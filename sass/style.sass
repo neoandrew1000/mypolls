@@ -49,7 +49,6 @@
 
 
 	#fullpage	
-
 		#section1
 			opacity: 0
 			.begin
@@ -551,6 +550,77 @@
 						font-weight: 100
 						margin-top: -55px
 						padding: 25px  0 0 25px
+
+@media (orientation: landscape) and (max-width: 668px)
+	.menu
+		li
+			padding: 18px 9px
+			font-size: 94%
+
+	#rightMenu
+		margin-right: 5%
+
+		.registration
+			border: solid 1px $d-d-gray
+			margin: 13px 0px 12px 8px
+			padding: 2px 3px 3px 3px
+
+	#fullpage	
+		#section1 
+			ul
+				li
+					div
+						height: 135px
+				
+				h1
+					font-size: 150%
+
+				h5
+					font-size: 80%
+
+				li:nth-child(1)
+					visibility: hidden
+					h1
+						font-size: 0%
+
+				li:nth-child(5)
+					h5
+						font-size: 80%
+						padding: 5px 8px 6px 8px
+
+		#section2
+			ul
+				li
+					img
+						margin: 10px
+						height: 40%						
+						width: 60%
+
+		#section4
+			.leftSection
+				h4
+					padding-left: 0
+
+				ul
+					.firstManager
+						p
+							margin-right: 66px
+
+					.secondManager
+						ul
+							li:nth-child(2)
+								width: 172px
+			.rightSectionLi
+				.rightSection
+					ul
+						padding: 20px
+
+
+		    			
+
+	
+
+//@media (orientation: landscape) and (max-width: 568px)
 
 //@media (orientation: portrait) and (max-width: 1024px)
 

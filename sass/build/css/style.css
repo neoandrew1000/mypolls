@@ -474,3 +474,39 @@ a:focus:after {
     font-weight: 100;
     margin-top: -55px;
     padding: 25px  0 0 25px; } }
+
+@media (orientation: landscape) and (max-width: 668px) {
+  .menu li {
+    padding: 18px 9px;
+    font-size: 94%; }
+  #rightMenu {
+    margin-right: 5%; }
+    #rightMenu .registration {
+      border: solid 1px #191919;
+      margin: 13px 0px 12px 8px;
+      padding: 2px 3px 3px 3px; }
+  #fullpage #section1 ul li div {
+    height: 135px; }
+  #fullpage #section1 ul h1 {
+    font-size: 150%; }
+  #fullpage #section1 ul h5 {
+    font-size: 80%; }
+  #fullpage #section1 ul li:nth-child(1) {
+    visibility: hidden; }
+    #fullpage #section1 ul li:nth-child(1) h1 {
+      font-size: 0%; }
+  #fullpage #section1 ul li:nth-child(5) h5 {
+    font-size: 80%;
+    padding: 5px 8px 6px 8px; }
+  #fullpage #section2 ul li img {
+    margin: 10px;
+    height: 40%;
+    width: 60%; }
+  #fullpage #section4 .leftSection h4 {
+    padding-left: 0; }
+  #fullpage #section4 .leftSection ul .firstManager p {
+    margin-right: 66px; }
+  #fullpage #section4 .leftSection ul .secondManager ul li:nth-child(2) {
+    width: 172px; }
+  #fullpage #section4 .rightSectionLi .rightSection ul {
+    padding: 20px; } }

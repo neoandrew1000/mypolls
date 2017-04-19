@@ -148,8 +148,7 @@ a:focus:after {
         #fullpage #section2 ul li h2 {
           color: white;
           font-weight: 400;
-          margin-top: 50px;
-          margin-bottom: 100px;
+          margin: 20% 0 15% 0;
           opacity: 0; }
         #fullpage #section2 ul li h4 {
           color: white;
@@ -365,11 +364,10 @@ a:focus:after {
     font-size: 100%; }
   #fullpage #section1 ul li div {
     height: 295px; }
-  #fullpage #section2 ul li h2 {
-    margin-top: 0px;
-    margin-bottom: 50px; }
   #fullpage #section2 ul li:nth-child(2) {
     width: 84%; }
+  #fullpage #section2 ul li h2 {
+    margin: 20% 0 13% 0; }
   #fullpage #section3 ul li img {
     width: 600px; }
   #fullpage #section3 ul li ul li h5 {
@@ -407,8 +405,7 @@ a:focus:after {
 
 @media (orientation: landscape) and (max-width: 1024px) {
   #fullpage #section2 ul li h2 {
-    margin-top: 60px;
-    margin-bottom: 50px; }
+    margin: 20% 0 10% 0; }
   #fullpage #section3 ul li img {
     width: 500px; }
   #fullpage #section3 ul li ul li h5 {
@@ -438,10 +435,12 @@ a:focus:after {
   #fullpage #section2 ul {
     height: 90%; }
     #fullpage #section2 ul li img {
-      width: 100px; }
+      margin: 8%;
+      height: 40%;
+      width: 60%; }
     #fullpage #section2 ul li h2 {
       font-size: 140%;
-      margin: 74px 0 18px 0; }
+      margin: 26% 0 5% 0; }
     #fullpage #section2 ul li h4 {
       font-size: 120%;
       margin-bottom: 0; }
@@ -499,7 +498,7 @@ a:focus:after {
     font-size: 80%;
     padding: 5px 8px 6px 8px; }
   #fullpage #section2 ul li img {
-    margin: 10px;
+    margin: 8%;
     height: 40%;
     width: 60%; }
   #fullpage #section4 .leftSection h4 {
